@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#header_st{
+    width: 100%;
+    height: 9vh;
+    background: #FF6F00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: poppins;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+#header_st i{
+    font-size: 30px;
+    margin: 5px;
+}

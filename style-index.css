@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#header_st{
+    width: 100%;
+    height: 9vh;
+    background: #FF6F00;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: poppins;
+    align-items: center;
+    gap: 400px;
+    position: fixed;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
+}
+.left_header{
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+}
+.left_header i{
+    font-size: 30px;
+    margin: 3px;
+}
+
+.icons_header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.icons_header i{
+    margin: 10px;
+}
+.more{
+    padding: 10vh;
+    height: 60vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 50px;
+
+}
+.more .item{
+    background: #e9e7e7;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    border-radius: 5px;
+}
+.title{
+    padding-top: 11vh;
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more .item .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.more .item .text{
+    display: flex;
+    justify-content: center;
+    margin: 27px;
+    flex-direction: column;
+    align-items: center;
+}
+.more .item .text .title-burguer{
+    color: #a74800;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: poppins;
+    margin-bottom: 10px;
+}
+.more .item .text .text-description{
+    font-family: poppins;
+    font-weight: 100;
+    text-align: justify;
+    margin-right: 20px;
+}
+.more .item img{
+    width: 300px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.more .item .text .cart-item{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.more .item .text .text-cart{
+    margin-left: 7px;
+    font-family: poppins;
+    font-weight: 200;
+
+}
+@media (max-width: 480px) {
+    .more{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+}
