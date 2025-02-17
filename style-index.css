@@ -110,8 +110,48 @@ a{
 
 }
 @media (max-width: 480px) {
+
+}
+/*Celulares*/
+@media (max-width: 480px){
+    #header_st{
+        display: block;
+        width: 100%;
+        height: 75px;
+    }
+    .left_header{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+    }
+    .icons_header{
+        display: flex;
+        justify-content: center;
+        position: right;
+        margin-bottom: 50px;
+
+
+    }
+    .left_header h1{
+        font-size: 25px;
+    }
+    .icons_header i{
+        margin-top: 0;
+        font-size: 20px;
+    }
     .more{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
+        align-items: center;
+        justify-content: center;
+    }
+    .more .item{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
     }
 }
