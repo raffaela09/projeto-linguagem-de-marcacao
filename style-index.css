@@ -5,7 +5,7 @@
     
 }
 #header_st{
-    width: 100vw;
+    width: 100%;
     height: 9vh;
     background: #FF6F00;
     color: white;
@@ -13,7 +13,7 @@
     grid-template-columns: repeat(2, 1fr);
     font-family: poppins;
     align-items: center;
-    justify-content: space-between;
+    gap: 400px;
     position: fixed;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2)
 }
@@ -37,27 +37,24 @@
     margin: 10px;
 }
 .more{
-    height: 80vh;
+    padding: 5%;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 50px;
-    padding-bottom: 50px;
-    margin : 50px;
+
 }
 .more .item{
+    padding: 15px;
     background: #e9e7e7;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
     border-radius: 5px;
-
 }
 .title{
-    padding-top: 6vh;
-    font-weight: 400;
-    font-size: 26px;
-    padding-top: 9vh;
+    padding-top: 11vh;
     font-family: Poppins;
     display: flex;
     align-items: center;
@@ -65,14 +62,13 @@
 }
 .more .item .image{
     display: flex;
-    margin: 10px;
     align-items: center;
     justify-content: center;
 }
 .more .item .text{
     display: flex;
     justify-content: center;
-    margin: 27px;
+    /* margin: 27px; */
     flex-direction: column;
     align-items: center;
 }
@@ -90,7 +86,7 @@
     margin-right: 20px;
 }
 .more .item img{
-    width: 300px;
+    width: 250px;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 3px;
 }
@@ -100,39 +96,22 @@ a{
 }
 
 .more .item .text .cart-item{
+    margin-top: 5px;
     display: flex;
     align-items: center;
-    margin-top: 10px;
     font-size: 20px;
     cursor: pointer;
 }
 .more .item .text .text-cart{
+    margin-top: 5px;
     margin-left: 7px;
     font-family: poppins;
     font-weight: 200;
 
 }
-.more .item .text .price-burguer{
-    margin-top: 10px;
-    font-family: poppins;
-    color: #913f00;
-}
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     .more{
-        width: 100%;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
-    .item{
-        width: 90%; 
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-   .more .item .image{
-    width: 100%;
-    display: block;
-   }
-}  */
+}
