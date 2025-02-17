@@ -18,3 +18,129 @@
     font-size: 30px;
     margin: 5px;
 }
+.more{
+    padding: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.more .item{
+    background: #e9e7e7;
+    display: grid;
+    grid-template-columns: repeat(2,300px);
+    height: 200px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+
+}
+.more .item img{
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.more .item .image{
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.more .item .price{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.more .item p{
+    padding: 5px;
+}
+.title{
+    color: #a74800;
+    font-size: 20px;
+    font-family: poppins;
+}
+.title_price{
+    font-family: poppins;
+    font-size: 15px;
+}
+.final{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px;
+}
+.total{
+    font-family: poppins;
+    font-size: 20px;
+}
+.finalize{
+    margin: 5px;
+    outline: none;
+    border: none;
+    width: 150px;
+    height: 50px;
+    color: white;
+    background: #FF6F00;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 15px;
+}
+.finalize:hover{
+    background: #E65100;
+}
+.back a{
+    text-decoration: none;
+    color: inherit;
+    font-family: poppins;
+    font-size: 20px;
+    font-weight: 200;
+}
+.back:hover{
+    color: #FF6F00;
+}
+
+@media (max-width: 1024px) {
+
+    #header_st {
+        height: 10vh;
+    }
+
+    .more{
+        padding-top: 15vh;
+    }
+    .more .item {
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+    }
+
+    .more .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+
+    .title_price {
+        font-size: 14px;
+    }
+
+    .final {
+        margin: 15px;
+    }
+
+    .total {
+        font-size: 18px;
+    }
+
+    .finalize {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+}
